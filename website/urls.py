@@ -21,5 +21,6 @@ urlpatterns = [
     path('', views.index, name="index"),
     path('video/<str:url>', views.index, name="index"),
     url(r'^$', views.index),
-    path('view/', views.viewVideo, name="viewVideo"),
+    path('view-movie/', views.viewMovie, name="viewMovie"),
+    path('view-series/', views.viewSeries, name="viewSeries"),
 ]
