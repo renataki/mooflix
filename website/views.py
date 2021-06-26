@@ -7,5 +7,5 @@ def index(response):
     return render(response, "website/index.html")
 
 
-def watch(request):
+def viewVideo(request):
     return render(request, 'website/movie-detail.html')
