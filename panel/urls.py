@@ -21,6 +21,10 @@ urlpatterns = [
     path('', views.index, name="index"),
     path('video/<str:url>', views.index, name="index"),
     path('login', views.login, name="login"),
-    path('banner', views.banner, name="banner"),
-    path('movie/add', views.add, name="add"),
+    path('banner/', views.indexBanner, name="indexBanner"),
+    path('banner/add/', views.addBanner, name="addBanner"),
+    path('movie/add/', views.addMovies, name="addMovies"),
+    path('movie/', views.indexMovies, name="indexMovies"),
+    path('staff/', views.indexStaff, name="indexStaff"),
+    path('staff/add/', views.addStaff, name="addStaff"),
 ]

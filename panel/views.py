@@ -11,9 +11,25 @@ def login(request):
     return render(request, 'panel/login.html')
 
 
-def banner(request):
-    return render(request, 'panel/pages/banner/banner-list.html')
+def indexBanner(request):
+    return render(request, 'panel/pages/banner/index.html')
 
 
-def add(request):
-    return render(request, 'panel/pages/moviecenter/add-movies.html')
+def addBanner(request):
+    return render(request, 'panel/pages/banner/add.html')
+
+
+def indexMovies(request):
+    return render(request, 'panel/pages/moviecenter/index.html')
+
+
+def addMovies(request):
+    return render(request, 'panel/pages/moviecenter/add.html')
+
+
+def indexStaff(request):
+    return render(request, 'panel/pages/staff/index.html')
+
+
+def addStaff(request):
+    return render(request, 'panel/pages/staff/add.html')
